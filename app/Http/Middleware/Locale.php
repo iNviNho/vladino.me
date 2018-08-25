@@ -18,6 +18,13 @@ class Locale
     {
         $firstSegment = $request->segment(1);
 
+        // if first segment is not our language
+        // than append at to the desired route
+        if (is_null($firstSegment) || !in_array($firstSegment, config("app.locales"))) {
+            return redirect(config("app.locale") . $request->getPathInfo());
+        }
+
+
         // if first segment is empty just set locale to default
         if (is_null($firstSegment)) {
             App::setLocale(config("app.locale"));

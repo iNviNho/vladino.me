@@ -23,22 +23,82 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="{{ assetn('css/app.css') }}" rel="stylesheet">
+    <link href="{{ assetn('css/app.css') }}?{{rand(1,250)}}" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="{{ assetn("images/h.png") }}">
+    {{--<link rel="icon" type="image/png" href="{{ assetn("images/h.png") }}">--}}
 
 </head>
-<body class="lenka-bg">
-    <div id="app">
-        @if(session()->has('msg'))
-            <div class="alert alert-info">
-                {!! session('msg') !!}
-            </div>
-        @endif
+<body>
+    <section class="main-section" style="background-image: url({{assetn("images/IMG_501888.jpg")}})">
+        <section class="top-bar row">
+            <section class="logo col-md-4">
+                <h1>vladino.me</h1>
+            </section>
+            <nav class="navigation col-md-8">
+                <ul class="lang-ul">
+                    <li >
+                        <a class="active" href="">SK</a>
+                    </li>
+                    <li class="">
+                        <a href="">EN</a>
+                    </li>
+                    <li class="">
+                        <a href="">DE</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="active" href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Resume</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                <br class="clear">
+            </nav>
+        </section>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+        <section class="main-quote">
+            <h1>enthusiastic young developer</h1>
+        </section>
+
+    </section>
+
+    <section>
+        @yield('content')
+    </section>
+
+    <section class="footer">
+        <section class="footer-inner">
+            <h1>“some sexy quote“</h1>
+            <ul class="menu-review">
+                <li>
+                    <a class="active" href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Resume</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            <p>@2018 No rights reserved. Feel free to share or use whatever you wish to.</p>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/vladinoo.vrab"><span class="fab fa-facebook-square"></span></a>
+                </li>
+                <li>
+                    <a href="https://sk.linkedin.com/in/vladim%C3%ADr-vr%C3%A1b-73a441119"><span class="fab fa-linkedin"></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/iNviNho"><span class="fab fa-github"></span></a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
 </body>
 </html>

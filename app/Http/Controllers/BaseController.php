@@ -12,7 +12,6 @@ namespace App\Http\Controllers;
 class BaseController extends Controller
 {
 
-
     public function home() {
         return view("base.home");
     }
