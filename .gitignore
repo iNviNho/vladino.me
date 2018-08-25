@@ -1,0 +1,9 @@
+/public/hot
+/public/storage
+/storage
+/storage/*.key
+/vendor
+/.idea
+.env
+/bootstrap/cache/*
+bootstrap/cache/*

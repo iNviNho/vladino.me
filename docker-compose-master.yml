@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  hazarder-apache:
+    image: vladinome_master:latest
+    container_name: vladinome
+    networks:
+      - nginxdb_proxy
+    volumes:
+      - .:/var/www/html
+    command: /var/www/html/init-master.sh
+    restart: always
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_HOST=vladinome.local
+      - TZ=Europe/Vienna
+
+networks:
+  nginxdb_proxy:
+    external: true
