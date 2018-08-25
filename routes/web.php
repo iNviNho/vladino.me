@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', "BaseController@home");
-Route::get('/resume', "BaseController@resume");
-Route::get('/contact', "BaseController@contact");
+Route::prefix("{locale?}")->middleware("locale")->group(function () {
+
+    Route::get('/', "BaseController@home");
+    Route::get('/resume', "BaseController@resume");
+    Route::get('/contact', "BaseController@contact");
+
+});

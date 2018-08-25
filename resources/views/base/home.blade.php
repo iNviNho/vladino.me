@@ -1,5 +1,5 @@
 @extends("layouts.app")
 
 @section('content')
-HOME SECTION
+{{__("base.welcome")}}
 @endsection
