@@ -197,11 +197,14 @@ nav.navigation ul li a {
 
 nav.navigation ul li a:hover {
     opacity: 1;
+    font-weight: bold;
+
 }
 
 nav.navigation ul li a.active {
     opacity: 1;
     border-bottom: 1px solid #fff;
+    font-weight: bold;
 }
 
 nav.navigation .lang-ul {
