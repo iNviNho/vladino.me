@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>vladino.me | developer</title>
+    <title>vladino.me | enthusiastic young developer</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{{ assetn('js/app.js') }}" defer></script>
+    <script src="{{ assetn('js/app.js') }}" ></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -25,36 +26,55 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{ assetn('css/app.css') }}?{{rand(1,250)}}" rel="stylesheet">
 
-    {{--<link rel="icon" type="image/png" href="{{ assetn("images/h.png") }}">--}}
+    <link rel="icon" type="image/png" href="{{ assetn("images/logo.png") }}">
+
+    @if (env("APP_ENV") == "production")
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124630454-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-124630454-1');
+        </script>
+    @endif
 
 </head>
 <body>
-    <section class="main-section" style="background-image: url({{assetn("images/IMG_501888.jpg")}})">
+    @if (Request::route()->getName() == "home")
+    <section class="main-section" >
+        <div class="my-bg" style="background-image: url({{assetn("images/IMG_5018.JPG?new")}})"></div>
         <section class="top-bar row">
             <section class="logo col-md-4">
-                <h1>vladino.me</h1>
+                <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
             </section>
             <nav class="navigation col-md-8">
                 <ul class="lang-ul">
                     <li >
-                        <a class="active" href="">SK</a>
+                        <a @if (App::getLocale() == "sk")
+                            class="active"
+                            @endif href="/sk">SK</a>
                     </li>
                     <li class="">
-                        <a href="">EN</a>
+                        <a @if (App::getLocale() == "en")
+                           class="active"
+                           @endif  href="/en">EN</a>
                     </li>
                     <li class="">
-                        <a href="">DE</a>
+                        <a @if (App::getLocale() == "de")
+                           class="active"
+                           @endif href="/de">DE</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a class="active" href="">Home</a>
+                        <a href="/{{App::getLocale() . "/"}}" class="active">Home</a>
                     </li>
                     <li>
-                        <a href="">Resume</a>
+                        <a href="/{{App::getLocale() . "/resume"}}">Resume</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="/{{App::getLocale() . "/contact"}}">Contact</a>
                     </li>
                 </ul>
                 <br class="clear">
@@ -62,10 +82,13 @@
         </section>
 
         <section class="main-quote">
-            <h1>enthusiastic young developer</h1>
+            <h1 class="first">ENTHUSIASTIC</h1>
+            <h1 class="second">YOUNG</h1>
+            <h1 class="third">DEVELOPER</h1>
         </section>
 
     </section>
+    @endif
 
     <section>
         @yield('content')
@@ -76,13 +99,13 @@
             <h1>“some sexy quote“</h1>
             <ul class="menu-review">
                 <li>
-                    <a class="active" href="">Home</a>
+                    <a href="/{{App::getLocale()}}">Home</a>
                 </li>
                 <li>
-                    <a href="">Resume</a>
+                    <a href="/{{App::getLocale()}}/resume">Resume</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="/{{App::getLocale()}}/contact">Contact</a>
                 </li>
             </ul>
             <p>@2018 No rights reserved. Feel free to share or use whatever you wish to.</p>

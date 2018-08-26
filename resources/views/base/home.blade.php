@@ -20,7 +20,7 @@
                 infancy. Various versions have evolved over the years, sometimes by
                 accident, sometimes on purpose (injected humour and the like).
             </p>
-            <a class="hvr-bounce-to-right" href="">RESUME</a>
+            <a class="hvr-bounce-to-right" href="{{App::getLocale() . "/resume"}}">RESUME</a>
         </section>
     </section>
 

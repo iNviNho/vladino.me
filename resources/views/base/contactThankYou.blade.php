@@ -48,6 +48,9 @@
     <section class="contact base-section">
         <div class="inner">
             <h1>Contact</h1>
+            <div class="alert alert-success" role="alert">
+                <h1 style="padding: 20px 10px;">Thank you! I got it <span class="fas fa-smile-wink"></span></h1>
+            </div>
             <p>Feel free to ask me whatever you wish to.</p>
             <form action="/{{App::getLocale()}}/contact/submit" method="post" autocomplete="off">
                 {{csrf_field()}}
