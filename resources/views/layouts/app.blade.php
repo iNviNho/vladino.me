@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>vladino.me | enthusiastic young developer</title>
+    <title>vladino.me | @lang("base.titlemoto") </title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -68,13 +68,13 @@
                     </ul>
                     <ul>
                         <li>
-                            <a href="/{{App::getLocale() . "/"}}" class="active">Home</a>
+                            <a href="/{{App::getLocale() . "/"}}" class="active">@lang("base.home")</a>
                         </li>
                         <li>
-                            <a href="/{{App::getLocale() . "/resume"}}">Resume</a>
+                            <a href="/{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
                         </li>
                         <li>
-                            <a href="/{{App::getLocale() . "/contact"}}">Contact</a>
+                            <a href="/{{App::getLocale() . "/contact"}}">@lang("base.contact")</a>
                         </li>
                     </ul>
                     <br class="clear">
@@ -82,9 +82,9 @@
             </section>
 
             <section class="main-quote">
-                <h1 class="first">ENTHUSIASTIC</h1>
-                <h1 class="second">YOUNG</h1>
-                <h1 class="third">DEVELOPER</h1>
+                <h1 class="first">@lang("base.motofirst")</h1>
+                <h1 class="second">@lang("base.motosecond")</h1>
+                <h1 class="third">@lang("base.motothird")</h1>
             </section>
 
         </section>
@@ -115,15 +115,15 @@
                     <ul>
                         <li>
                             <a href="/{{App::getLocale() . "/"}}"
-                               @if (Request::route()->getName() == "home") class="active" @endif>Home</a>
+                               @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                         </li>
                         <li>
                             <a href="/{{App::getLocale() . "/resume"}}"
-                               @if (Request::route()->getName() == "resume") class="active" @endif>Resume</a>
+                               @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
                         </li>
                         <li>
                             <a href="/{{App::getLocale() . "/contact"}}"
-                               @if (Request::route()->getName() == "contact") class="active" @endif>Contact</a>
+                               @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
                         </li>
                     </ul>
                     <br class="clear">
@@ -138,19 +138,19 @@
 
     <section class="footer">
         <section class="footer-inner">
-            <h1>“some sexy quote“</h1>
+            <h1>“@lang("base.somesexyquote")“</h1>
             <ul class="menu-review">
                 <li>
-                    <a href="/{{App::getLocale()}}">Home</a>
+                    <a href="/{{App::getLocale()}}">@lang("base.home")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale()}}/resume">Resume</a>
+                    <a href="/{{App::getLocale()}}/resume">@lang("base.resume")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale()}}/contact">Contact</a>
+                    <a href="/{{App::getLocale()}}/contact">@lang("base.contact")</a>
                 </li>
             </ul>
-            <p>@2018 No rights reserved. Feel free to share or use whatever you wish to.</p>
+            <p>@lang("base.norightsreserved")</p>
             <ul class="social-icons">
                 <li>
                     <a href="https://www.facebook.com/vladinoo.vrab"><span class="fab fa-facebook-square"></span></a>
