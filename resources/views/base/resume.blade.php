@@ -100,5 +100,37 @@
         </section>
     </section>
 
+    <section class="base-section base-section-dark">
+        <section class="inner">
+            {{--<h1>@lang("base.drugheader")</h1>--}}
+            <div class="drugs-box row">
+
+
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/laravel.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/nette.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/symfony.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/cakephp.png")}})"></div>
+
+                <div class="resume-logo-space"></div>
+
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/htmlcssjs.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/phpstorm.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/docker.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/git.png")}})"></div>
+
+                <div class="resume-logo-space"></div>
+
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/php.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/composer.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/mysql.png")}})"></div>
+                <div class="drugs-box-inner resume-logo col-md-3" style="background-image: url({{assetn("images/logos/redis.png")}})"></div>
+
+                <div class="resume-logo-space"></div>
+
+                <div class="drugs-box-inner resume-logo col-md-12" style="background-image: url({{assetn("images/logos/ubuntu.png")}})"></div>
+            </div>
+        </section>
+    </section>
+
 
 @endsection

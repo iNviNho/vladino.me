@@ -368,6 +368,24 @@ nav.navigation .lang-ul li a {
     margin-top: 25px;
 }
 
+.resume-logo {
+    height: 150px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(20%);
+    transition: .25s linear;
+}
+
+.resume-logo:hover {
+    filter: grayscale(0%);
+}
+
+.resume-logo-space {
+    width: 100%;
+    padding: 40px 0px;
+}
+
 .my-face {
     margin-left: auto;
     background-size: cover;
