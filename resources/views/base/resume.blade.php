@@ -5,7 +5,7 @@
     <section class="base-section text-left">
         <section class="inner">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 my-info">
                     <h3>Vladimír Vráb</h3>
                     <p>
                         Martin (Slovakia), 19th of May 1993<br>
@@ -15,7 +15,7 @@
                         Driving license B<br>
                     </p>
                 </div>
-                <div class="my-face" style="background-image: url({{assetn("images/my-face.jpeg")}})"></div>
+                <div class="my-face" style="background-image: url({{assetn("images/vladimir-vrab.jpg")}})"></div>
             </div>
         </section>
     </section>

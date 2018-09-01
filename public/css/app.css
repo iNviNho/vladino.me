@@ -389,13 +389,16 @@ nav.navigation .lang-ul li a {
 .my-face {
     margin-left: auto;
     background-size: cover;
-    background-position: center center;
-    width: 250px;
-    height: 250px;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 270px;
 }
 
 
-
+.my-info {
+    padding-top: 30px;
+}
 
 .special-line {
     position: relative;
