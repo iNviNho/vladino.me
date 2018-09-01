@@ -8,6 +8,7 @@ return [
     "contactsmall" => "Contact",
 
     "titlemoto" => "enthusiastic young developer",
+    "description" => "Enthusiastic young PHP developer working hard with the best technologies to fulfil his dreams.",
 
     "motofirst" => "ENTHUSIASTIC",
     "motosecond" => "YOUNG",
@@ -19,15 +20,15 @@ return [
     "whoami" => "Who am I?",
     "whoamitext" => "I am <strong>:years years</strong>, <strong>:months months</strong> and <strong>:days days</strong> old guy coming from a small town called 
                 <strong>Martin</strong> in a <strong>beautiful country Slovakia</strong>. 
-                I was raised in a great family with inspiring people that taught me to always stay <strong>polite</strong>, don't loose <strong>friendliness</strong>, 
+                I was born in a great family with inspiring people that taught me to always stay <strong>polite</strong>, don't loose <strong>friendliness</strong>, 
                 <strong>work hard</strong>
                 and <strong>combine heart with mind</strong> when making decisions.<br><br>
 
                 Throughout my life i came across some very exciting and interesting stuff that formed me into a person i am now with a goal and 
                 path that i keep <strong>following every single day.</strong><br><br>
 
-                My first steps with technologies started at university back in 2012. What followed afterwards has the biggest impact on my knowledge. 
-                We can count an amount of numerous projects i was working on and countless hours watching, learning and reading docs when no one looks. 
+                My first steps with technologies started at university back in 2012. What followed afterwards had the biggest impact on my knowledge. 
+                We can could count an amount of numerous projects i was working on and countless hours watching, learning and reading docs behind a closed door. 
                 I am a believer of a quote that <strong>it does not count what you do on a pitch, but what you do afterwards.</strong>",
 
 
@@ -44,7 +45,7 @@ return [
     "drugfriendstext" => "Without a friends i would have been a book without pages",
     "drugcodingtext" => "I simply love coding and every aspect it brings",
     "drugdogtext" => "I can not evaluate how much happynes and joy had animals already gave me",
-    "drugcartext" => "Great day is to put some music on and spent hours digging in car",
+    "drugcartext" => "Great day is to put some music on and spent hours digging in a car",
 
 
 

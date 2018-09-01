@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>vladino.me | @lang("base.titlemoto") </title>
+    <meta name="description" content="@lang("base.description")">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -68,7 +69,7 @@
                     </ul>
                     <ul>
                         <li>
-                            <a href="/{{App::getLocale() . "/"}}" class="active">@lang("base.home")</a>
+                            <a href="/{{App::getLocale()}}" class="active">@lang("base.home")</a>
                         </li>
                         <li>
                             <a href="/{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
@@ -87,6 +88,9 @@
                 <h1 class="third">@lang("base.motothird")</h1>
             </section>
 
+            <div class="arrow">
+                <span class="fas fa-chevron-down"></span>
+            </div>
         </section>
     @else
         <section class="main-section main-section-offhome" >
@@ -99,22 +103,22 @@
                         <li >
                             <a @if (App::getLocale() == "sk")
                                class="active"
-                               @endif href="/sk">SK</a>
+                               @endif href="/sk/{{Request::route()->getName()}}">SK</a>
                         </li>
                         <li class="">
                             <a @if (App::getLocale() == "en")
                                class="active"
-                               @endif  href="/en">EN</a>
+                               @endif  href="/en/{{Request::route()->getName()}}">EN</a>
                         </li>
                         <li class="">
                             <a @if (App::getLocale() == "de")
                                class="active"
-                               @endif href="/de">DE</a>
+                               @endif href="/de/{{Request::route()->getName()}}">DE</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/{{App::getLocale() . "/"}}"
+                            <a href="/{{App::getLocale() }}"
                                @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                         </li>
                         <li>

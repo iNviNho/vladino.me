@@ -137,6 +137,74 @@ h1 {
     }
 }
 
+.main-section .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    z-index: 3;
+    font-size: 50px;
+    animation: bounce 2s infinite;
+    animation-delay: 4s;
+    opacity: 0;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    40% {
+        -moz-transform: translate(-50%, -10px);
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        -moz-transform: translate(-50%, -5px);
+        transform: translate(-50%, -5px);
+    }
+}
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    40% {
+        -webkit-transform: translate(-50%, -10px);
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        -webkit-transform: translate(-50%, -5px);
+        transform: translate(-50%, -5px);
+    }
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    40% {
+        -moz-transform: translate(-50%, -10px);
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        -moz-transform: translate(-50%, -5px);
+        transform: translate(-50%, -5px);
+    }
+}
 
 .top-bar {
     padding-top: 20px;
