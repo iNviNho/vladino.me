@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
@@ -18,7 +19,15 @@ class BaseController extends Controller
 {
 
     public function home() {
-        return view("base.home");
+
+        $myBirthday = Carbon::createFromDate(1993, 5, 19);
+        $now = Carbon::now();
+
+        $interval = $now->diff($myBirthday);
+
+        return view("base.home", [
+            "interval" => $interval
+        ]);
     }
 
     public function resume() {

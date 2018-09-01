@@ -43,8 +43,8 @@
 <body>
     @if (Request::route()->getName() == "home")
         <section class="main-section" >
-            <div class="my-bg" style="background-image: url({{assetn("images/IMG_5018.JPG?new")}})"></div>
-            <section class="top-bar row">
+            <div class="my-bg" style="background-image: url({{assetn("images/me-and-my-life.JPG")}})"></div>
+            <section class="top-bar row top-bar-layout">
                 <section class="logo col-md-4">
                     <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
                 </section>
