@@ -1,0 +1,13 @@
+<VirtualHost *:443>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/private/vladino.me.crt
+    SSLCertificateKeyFile /etc/ssl/private/vladino.me.key
+
+    <Directory "/var/www/html">
+        Options FollowSymLinks
+        AllowOverride all
+    </Directory>
+</VirtualHost>

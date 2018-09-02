@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  hazarder-apache:
+    image: vladinome_production:latest
+    container_name: vladinome
+    networks:
+      - nginxdb_proxy
+    volumes:
+      - .:/var/www/html
+      - /etc/letsencrypt/archive/vladino.me:/etc/ssl/private
+    command: /var/www/html/init-production.sh
+    restart: always
+    ports:
+      - 443
+    environment:
+      - VIRTUAL_HOST=vladino.me
+      - TZ=Europe/Vienna
+
+networks:
+  nginxdb_proxy:
+    external: true
