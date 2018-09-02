@@ -350,6 +350,14 @@ nav.navigation .lang-ul li a {
     margin-top: 30px;
 }
 
+.base-section a.link {
+    margin-top: 0px;
+}
+
+.left-same-column {
+    width: 200px;
+}
+
 
 .drugs-box {
 
@@ -404,6 +412,7 @@ nav.navigation .lang-ul li a {
     position: relative;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .special-line h2 {
@@ -428,8 +437,25 @@ nav.navigation .lang-ul li a {
     padding-top: 0px;
 }
 
+.years-column {
+    text-align: left;
+    width: 150px;
+}
 
+.years-column-right {
+    text-align: right;
+}
 
+.arrow-inner {
+    color: black;
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+}
 
 
 
