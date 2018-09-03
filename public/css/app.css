@@ -1,11 +1,13 @@
 @font-face {
     font-family: GothamLight;
-    src: url("/fonts/gothamlight.ttf") format("truetype");
+    src: url("/fonts/gothamlight.svg") format("svg"),
+        url("/fonts/gothamlight.ttf") format("truetype");
 }
 
 @font-face {
     font-family: GothamBold;
-    src: url("/fonts/gothambold.ttf") format("truetype");
+    src: url("/fonts/gothamlight.svg") format("svg"),
+        url("/fonts/gothambold.ttf") format("truetype");
 }
 
 @font-face {
