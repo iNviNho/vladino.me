@@ -43,99 +43,105 @@
 
 </head>
 <body>
-    @if (Request::route()->getName() == "home")
-        <section class="main-section" >
+    {{--MOBILE CONTENT--}}
+    <div class="navigation-mobile-content">
+        <div class="close-mobile-navigation">
+            <span class="fas fa-times"></span>
+        </div>
+        <div class="navigation-mobile-content-inner">
+            <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
+            <ul>
+                <li>
+                    <a href="/{{App::getLocale()}}" class="active">@lang("base.home")</a>
+                </li>
+                <li>
+                    <a href="/{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
+                </li>
+                <li>
+                    <a href="/{{App::getLocale() . "/contact"}}">@lang("base.contact")</a>
+                </li>
+            </ul>
+            <ul class="lang-ul">
+                <li >
+                    <a @if (App::getLocale() == "sk")
+                       class="active"
+                       @endif href="/sk">SK</a>
+                </li>
+                <li class="">
+                    <a @if (App::getLocale() == "en")
+                       class="active"
+                       @endif  href="/en">EN</a>
+                </li>
+                <li class="">
+                    <a @if (App::getLocale() == "de")
+                       class="active"
+                       @endif href="/de">DE</a>
+                </li>
+            </ul>
+        </div>
+        <h1 class="navigation-mobile-footer">“@lang("base.somesexyquote")“</h1>
+    </div>
+
+    <section class="main-section @if (Request::route()->getName() != "home") main-section-offhome @endif" >
+        @if (Request::route()->getName() == "home")
             <div class="my-bg" style="background-image: url({{assetn("images/me-and-my-life.JPG")}})"></div>
-            <section class="top-bar row top-bar-layout">
-                <section class="logo col-md-4">
-                    <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
-                </section>
-                <nav class="navigation col-md-8">
-                    <ul class="lang-ul">
-                        <li >
-                            <a @if (App::getLocale() == "sk")
-                                class="active"
-                                @endif href="/sk">SK</a>
-                        </li>
-                        <li class="">
-                            <a @if (App::getLocale() == "en")
-                               class="active"
-                               @endif  href="/en">EN</a>
-                        </li>
-                        <li class="">
-                            <a @if (App::getLocale() == "de")
-                               class="active"
-                               @endif href="/de">DE</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="/{{App::getLocale()}}" class="active">@lang("base.home")</a>
-                        </li>
-                        <li>
-                            <a href="/{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
-                        </li>
-                        <li>
-                            <a href="/{{App::getLocale() . "/contact"}}">@lang("base.contact")</a>
-                        </li>
-                    </ul>
-                    <br class="clear">
-                </nav>
+        @endif
+        <section class="top-bar @if (Request::route()->getName() == "home") top-bar-layout @endif">
+            <section class="logo">
+                <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
             </section>
-
-            <section class="main-quote">
-                <h1 class="first">@lang("base.motofirst")</h1>
-                <h1 class="second">@lang("base.motosecond")</h1>
-                <h1 class="third">@lang("base.motothird")</h1>
-            </section>
-
-            <div class="arrow">
-                <span class="fas fa-chevron-down"></span>
+            <nav class="navigation navigation-desktop">
+                <ul class="lang-ul">
+                    <li >
+                        <a @if (App::getLocale() == "sk")
+                           class="active"
+                           @endif href="/sk/{{Request::route()->getName()}}">SK</a>
+                    </li>
+                    <li class="">
+                        <a @if (App::getLocale() == "en")
+                           class="active"
+                           @endif  href="/en/{{Request::route()->getName()}}">EN</a>
+                    </li>
+                    <li class="">
+                        <a @if (App::getLocale() == "de")
+                           class="active"
+                           @endif href="/de/{{Request::route()->getName()}}">DE</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/{{App::getLocale() }}"
+                           @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
+                    </li>
+                    <li>
+                        <a href="/{{App::getLocale() . "/resume"}}"
+                           @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
+                    </li>
+                    <li>
+                        <a href="/{{App::getLocale() . "/contact"}}"
+                           @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
+                    </li>
+                </ul>
+                <br class="clear">
+            </nav>
+            <div class="navigation navigation-mobile">
+                <span class="fas fa-bars"></span>
             </div>
+            <br class="clear">
         </section>
-    @else
-        <section class="main-section main-section-offhome" >
-            <section class="top-bar row">
-                <section class="logo col-md-4">
-                    <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
-                </section>
-                <nav class="navigation col-md-8">
-                    <ul class="lang-ul">
-                        <li >
-                            <a @if (App::getLocale() == "sk")
-                               class="active"
-                               @endif href="/sk/{{Request::route()->getName()}}">SK</a>
-                        </li>
-                        <li class="">
-                            <a @if (App::getLocale() == "en")
-                               class="active"
-                               @endif  href="/en/{{Request::route()->getName()}}">EN</a>
-                        </li>
-                        <li class="">
-                            <a @if (App::getLocale() == "de")
-                               class="active"
-                               @endif href="/de/{{Request::route()->getName()}}">DE</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="/{{App::getLocale() }}"
-                               @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
-                        </li>
-                        <li>
-                            <a href="/{{App::getLocale() . "/resume"}}"
-                               @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
-                        </li>
-                        <li>
-                            <a href="/{{App::getLocale() . "/contact"}}"
-                               @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
-                        </li>
-                    </ul>
-                    <br class="clear">
-                </nav>
-            </section>
+
+        @if (Request::route()->getName() == "home")
+        <section class="main-quote">
+            <h1 class="first">@lang("base.motofirst")</h1>
+            <h1 class="second">@lang("base.motosecond")</h1>
+            <h1 class="third">@lang("base.motothird")</h1>
         </section>
-    @endif
+        <div class="arrow">
+            <span class="fas fa-chevron-down"></span>
+        </div>
+        @endif
+
+    </section>
 
     <section>
         @yield('content')

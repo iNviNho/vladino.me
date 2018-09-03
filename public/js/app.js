@@ -25,4 +25,19 @@ $(function() {
         }, 1000);
     }, 4000);
 
+    $(".navigation-mobile").on("click", function() {
+
+        $("body").addClass("mobile-overflow");
+        $(".navigation-mobile-content").fadeIn(250);
+
+    });
+
+    $(".close-mobile-navigation span").on("click", function() {
+
+        $(".navigation-mobile-content").fadeOut(250, function() {
+            $("body").removeClass("mobile-overflow");
+        });
+
+    });
+
 });

@@ -221,6 +221,7 @@ h1 {
 }
 
 .top-bar .logo {
+    float: left;
     padding-left: 50px;
 }
 
@@ -243,7 +244,7 @@ h1 {
 }
 
 nav.navigation {
-
+    float: right;
 }
 
 
@@ -292,10 +293,98 @@ nav.navigation .lang-ul li a {
     padding: 0px 2px;
 }
 
+.navigation-mobile {
+    display: none;
+    float: right;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.navigation-mobile span {
+    font-size: 40px;
+}
+
+.navigation-mobile-content {
+    display: none;
+    position: absolute;
+    background: #FFF;
+    z-index: 4;
+    width: 100%;
+    min-height: 100%;
+}
+
+.mobile-overflow {
+    overflow: hidden;
+}
+
+.close-mobile-navigation {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.close-mobile-navigation span {
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navigation-mobile-content-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.navigation-mobile-content-inner h1 {
+    font-size: 80px;
+}
+
+.navigation-mobile-content-inner > a {
+    color: black;
+}
+
+.navigation-mobile-content-inner ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+}
+
+.navigation-mobile-content-inner ul.lang-ul {
+    display: block;
+}
+
+.navigation-mobile-content-inner ul.lang-ul li {
+    display: inline-block;
+}
+.navigation-mobile-content-inner ul.lang-ul li a {
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+.navigation-mobile-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #26262a;
+    color: #FFF;
+    margin: 0px;
+    padding: 20px 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.navigation-mobile-content-inner ul li a {
+    font-size: 40px;
+    color: black;
+}
 
 .main-section .main-quote {
     position: absolute;
-    top: 60%;
+    bottom: 10%;
     width: 100%;
     text-align: center;
 }

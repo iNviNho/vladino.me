@@ -18,6 +18,14 @@
         padding: 0px;
     }
 
+    .navigation-desktop {
+        display: none;
+    }
+
+    .navigation-mobile {
+        display: block;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -44,8 +52,17 @@
         background-position: 50% 25%;
     }
 
+    .navigation-mobile-content-inner h1 {
+        font-size: 50px;
+    }
 
+    .main-section .main-quote h1 {
+        font-size: 50px;
+    }
 
+    .main-section .arrow {
+        font-size: 30px;
+    }
 
 }
 
@@ -69,5 +86,12 @@
         width: 100%;
     }
 
+    .top-bar .logo h1 {
+        font-size: 35px;
+    }
+
+    .navigation-mobile {
+        padding: 0px 20px 20px 0px;
+    }
 
 }
