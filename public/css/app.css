@@ -306,7 +306,7 @@ nav.navigation .lang-ul li a {
 
 .navigation-mobile-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background: #FFF;
     z-index: 4;
     width: 100%;
