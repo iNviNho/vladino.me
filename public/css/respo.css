@@ -99,6 +99,10 @@
         padding-left: 20px;
     }
 
+    .top-bar .navigation {
+        padding-right: 20px;
+    }
+
     .top-bar .logo span {
         font-size: 15px;
     }
