@@ -5,6 +5,19 @@
         height: 300px;
     }
 
+    .resume-logo {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .resume-logo-ubuntu {
+        width: 100%;
+    }
+
+    .resume-logo-space {
+        padding: 0px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -24,11 +37,37 @@
 
 }
 
+@media (max-width: 700px) {
+
+    .my-face {
+        width: 100%;
+        background-position: 50% 25%;
+    }
+
+
+
+
+}
+
 
 @media (max-width: 550px) {
 
     h1 {
         font-size: 26px;
     }
+
+    section.footer .footer-inner .menu-review li {
+        width: 100%;
+        padding: 4px 10px;
+    }
+
+    .left-same-column {
+        width: 135px;
+    }
+
+    .resume-logo {
+        width: 100%;
+    }
+
 
 }

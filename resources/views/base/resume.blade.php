@@ -4,14 +4,15 @@
 
     <section class="base-section text-left">
         <section class="inner">
-            <div class="row">
-                <div class="col-md-5 my-info">
+            <div class="">
+                <div class="my-info">
                     <h3>Vladimír Vráb</h3>
                     <p>
                         @lang("base.myinfo")
                     </p>
                 </div>
                 <div class="my-face" style="background-image: url({{assetn("images/vladimir-vrab.jpg")}})"></div>
+                <br class="clear">
             </div>
         </section>
     </section>
@@ -416,7 +417,7 @@
 
                 <div class="resume-logo-space"></div>
 
-                <div class="drugs-box-inner resume-logo col-md-12" style="background-image: url({{assetn("images/logos/ubuntu.png")}})"></div>
+                <div class="drugs-box-inner resume-logo resume-logo-ubuntu col-md-12" style="background-image: url({{assetn("images/logos/ubuntu.png")}})"></div>
             </div>
         </section>
     </section>

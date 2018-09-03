@@ -397,7 +397,7 @@ nav.navigation .lang-ul li a {
 }
 
 .my-face {
-    margin-left: auto;
+    float: right;
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -407,6 +407,7 @@ nav.navigation .lang-ul li a {
 
 
 .my-info {
+    float: left;
     padding-top: 30px;
 }
 
