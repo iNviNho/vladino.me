@@ -31,12 +31,19 @@ $(function() {
 
     $(document).on("click", ".navigation-mobile", function() {
         $("body").addClass("mobile-overflow");
+        document.ontouchmove = function (e) {
+            e.preventDefault();
+        }
+
         $(".navigation-mobile-content").fadeIn(250);
     });
 
     $(document).on("click", ".close-mobile-navigation span", function() {
         $(".navigation-mobile-content").fadeOut(250, function() {
             $("body").removeClass("mobile-overflow");
+            document.ontouchmove = function (e) {
+                return true;
+            }
         });
     });
 
