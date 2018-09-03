@@ -95,6 +95,10 @@
         padding: 0px 20px 20px 0px;
     }
 
+    .top-bar .logo {
+        padding-left: 20px;
+    }
+
     .top-bar .logo span {
         font-size: 15px;
     }
