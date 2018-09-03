@@ -28,7 +28,7 @@ return [
                 path that i keep <strong>following every single day.</strong><br><br>
 
                 My first steps with technologies started at university back in 2012. What followed afterwards had the biggest impact on my knowledge. 
-                We can could count an amount of numerous projects i was working on and countless hours watching, learning and reading docs behind a closed door. 
+                We can count an amount of numerous projects i was working on and countless hours watching, learning and reading docs behind a closed door. 
                 I am a believer of a quote that <strong>it does not count what you do on a pitch, but what you do afterwards.</strong>",
 
 
