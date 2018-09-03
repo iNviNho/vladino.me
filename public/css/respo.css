@@ -107,4 +107,19 @@
         font-size: 15px;
     }
 
+    .navigation-mobile-content-inner h1 {
+        font-size: 30px;
+    }
+
+    .navigation-mobile-content-inner ul li a {
+        font-size: 22px;
+    }
+
+    .navigation-mobile-content-inner ul.lang-ul li a {
+        font-size: 18px;
+    }
+
+    .navigation-mobile-footer {
+        font-size: 20px;
+    }
 }
