@@ -10,7 +10,7 @@ return [
     "comingsoon" => "Coming soon",
 
     "titlemoto" => "enthusiastic young developer",
-    "description" => "Enthusiastic young PHP developer working hard with the best technologies to fulfil his dreams.",
+    "description" => "Enthusiastic young PHP developer working hard with the best technologies to fulfill his dreams.",
 
     "motofirst" => "ENTHUSIASTIC",
     "motosecond" => "YOUNG",

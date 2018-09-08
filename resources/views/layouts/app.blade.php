@@ -7,6 +7,7 @@
 
     <title>vladino.me | @lang("base.titlemoto") </title>
     <meta name="description" content="@lang("base.description")">
+    <meta property="og:image" content="{{ assetn("images/me-and-programming.JPG") }}" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
