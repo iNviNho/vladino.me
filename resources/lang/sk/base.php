@@ -75,6 +75,45 @@ return [
 
     "examples" => "Ukážky",
 
+
+
+    "workhistory" => "PRACOVNÁ HISTÓRIA",
+    "selfemployed" => "Začiatok",
+    "firststeps" => "Prvé kroky",
+    "firststepstext" => "<li>po prvý krát v kontakte s technológia okolo vývoja webových stránok</li>
+                        <li>učenie, učenie a skúšanie, aby som po prvý krát postavil webovú stránku na populárnom českom PHP frameworku - Nette</li>
+                        <li>tvorba 3 na mieru vytvorených stránok bez akéhokoľvek CMS systému</li>",
+    "artexeheader" => "Web vývojár, softvérový inžinier a team master",
+    "artexetext" => "<li>moja prvá skutočná práca v pozícií webového vývojára</li>
+                            <li>tvorba profesionálne pripravených webových stránok so špecifickými požiadavkami pre uspokojenie klienta</li>
+                            <li>tvorba vlastného informačného systému s tuctom modulov pre rôzne biznis moduly a pre rôznych zákazníkov</li>
+                            <li>team master pre junior programátorov</li>
+                            <li>bol som súčasťou každodenného biznis plánovania</li>",
+    "bitpandaheader" => "Softvérový inžinier",
+    "bitpandatext" => "<li>práca na API pre najväčšiu kryptomenovú platformu v Európe s viac než 850 000 zákazníkmi</li>
+                            <li>integrácia API pre rôzne platobné brány, identifikačných poskytovateľov, mail poskytovateľov, sms & hlasové služby a iné treťostranové knižnice</li>
+                            <li>integrácia noviniek a spájanie interných služieb s maximálnym dôrazom na bezpečnosť, funkčnosť, rýchlosť a bezproblémovosť</li>
+                            <li>kontakt s najrôznejšími programatorskými technikami, štýlmi písania, devops technikami a technológiami pre udržanie stability obrovského systému</li>
+                            <li>práca s jednými z najlepších programátov v Euroópe :)</li>",
+
+
+    "now" => "TERAZ",
+
+
+
+
+
+    "technicalskills" => "TECHNICKÉ ZRUČNOSTI",
+    "programminglanguages" => "Programovacie jazyky",
+    "databases" => "Databázy",
+    "softwaretools" => "Softwérové nástroje",
+    "libandtools" => "Knižnice a nástroje",
+    "hobbylanguages" => "Hobby jazyky",
+    "operationsystem" => "Operačný systém",
+
+
+
+
     "projectsitouched" => "PROJEKTY",
     "myfirstwebsite1" => "Moja prvá webová stránka",
     "myfirstwebsite2" => "Moja prvá webová stránka vytvorená v roku 2012 za pomoci jazyka HTML, CSS a čistého PHP",
@@ -93,56 +132,59 @@ return [
 
 
 
-    "customis1" => "Custom information systems",
-    "customis2" => "Custom-made information systems
+    "customis1" => "Informačné systémy na mieru",
+    "customis2" => "Informačné systémy na mieru
                         <ul>
-                            <li>every website was connected with CMS system to control content of website</li>
-                            <li>each client had custom requirements for functionality of Informaton System and therefore adaptation to client needs was our every day battle</li>
-                            <li>base of information system consisted of dozens of modules for controling content, user management, invoice module, CRM module and many more</li>
-                            <li>one of the most creative solutions were information sytem for high quality clothes company Marco Mirelli or creating from scratch information system for go carts</li>
+                            <li>každá webová stránka bola napojená na CMS systém pre pohodlnú správu obsahu</li>
+                            <li>požiadavky klienta boli vždy rozličné, a preto adaptácia funkcionality Informačného systému bol náš každodenný cieľ</li>
+                            <li>kostra informačného systému pozostávala z tuctu modulov zameraných na správu obsahu, správu užívateľov, správu kotanktov, fakturačný modul, CRM modul a mnoho iných</li>
+                            <li>jedna z najkreatívnejších a najzložitejších prác bol informačný systém pre firmu Marco Mirelli, ktorá ponúka špičkovo kvalitné oblečenie na mieru, 
+                            alebo tvorba systému pre motokáry úplne od základov</li>
                         </ul>",
-    "customis3" => "Marco Mirelli (High quality clothes) IS, Velox (Accountant) IS, 28blackarena (go-cart) IS, Informovanieapublicita (parsing state contracts) IS, Artexe CMS system, Artexe CRM system,
-                        Artexe ARTINO - e-learning system for high school education",
+    "customis3" => "Marco Mirelli (Vysoko kvalitné obleky) IS, Velox (Účtovníctvo) IS, 28blackarena (motokáry) IS, 
+        Informovanieapublicita (automatické parsovanie štátnych zákazok) IS, Artexe CMS systém, Artexe CRM systém,
+        Artexe ARTINO - e-learning systém pre stredoškolské vzdelávanie",
 
 
-    "customapi1" => "Custom API",
-    "customapi2" => "<li>working on backend API for frontend written in angular</li>
-                            <li>working on internal services</li>
-                            <li>working on service that is responsible for every email, sms and voice call going to customers</li>",
+    "customapi1" => "API na mieru",
+    "customapi2" => "<li>práca na API pre frontend napísaný v Angulare</li>
+                            <li>práca na interných API, komunikújúcich v uzavretých clusteroch</li>
+                            <li>práca na službe zodpovednej za každý e-mail, sms a hlasový hovor zákazníkovy, denne cez 10 000 požiadaviek</li>",
 
 
-    "customprojects1" => "Custom projects and interests",
-    "customprojects2" => "My custom projects and interest i keep working on in my free time
+    "customprojects1" => "Vlastné projekty a záujmy",
+    "customprojects2" => "Moje vlastné projekty a hobby jazyky, na ktorých pracujem vo svojom volnom čase
                         <ul>
-                            <li>i am working on a custom betting bot called hazarder hazarder.vladino.me</li>
-                            <li>i am running a custom VPS to try and learn simple DevOps techniques and tools using docker</li>
+                            <li>pracujem na vlastnom stávkovacom botovi nazvanom Hazarder</li>
+                            <li>obsluhujem vlastný VPS, aby som sa bližšie zoznámil s prácou DevOps a službou docker</li>
+                            <li>prevádzkujem TeamSpeak3 servery</li>
                         </ul>",
 
 
-    "languages" => "LANGUAGES",
+    "languages" => "JAZYKY",
     "languageslist" => "<tr>
-                    <td><strong>Languages</strong></td>
-                    <td><strong>Slovak</strong></td>
-                    <td><strong>English</strong></td>
-                    <td><strong>German</strong></td>
-                    <td><strong>Russian</strong></td>
+                    <td><strong>Jazyky</strong></td>
+                    <td><strong>Slovenský</strong></td>
+                    <td><strong>Anglický</strong></td>
+                    <td><strong>Nemecký</strong></td>
+                    <td><strong>Ruský</strong></td>
                 </tr>
                 <tr>
                     <td>Level</td>
-                    <td>Native</td>
+                    <td>Rodný jazyk</td>
                     <td>C1</td>
-                    <td>A1.2</td>
+                    <td>A1</td>
                     <td>A1</td>
                 </tr>",
 
-    "interesthobbies" => "INTEREST & HOBBIES",
-    "interesthobbiesli" => "<li>reading books</li>
-                <li>hiking</li>
-                <li>sports activities</li>
-                <li>learning new technologies</li>
-                <li>digging in a car</li>
-                <li>watching movies</li>
-                <li>hanging out with friends</li>",
+    "interesthobbies" => "ZÁUJMY & HOBBY",
+    "interesthobbiesli" => "<li>čítanie kníh</li>
+                <li>turistika</li>
+                <li>športové aktivity</li>
+                <li>učenie sa nových technológií</li>
+                <li>práca s autom</li>
+                <li>filmy</li>
+                <li>stretávanie sa s priateľmi</li>",
 
 
     "contacttext" => "Ak máte otázky, alebo mi len chcete niečo napísať, neváhajte, do toho :)",

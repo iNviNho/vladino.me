@@ -76,6 +76,41 @@ return [
 
     "examples" => "Examples",
 
+
+    "workhistory" => "WORK HISTORY",
+    "selfemployed" => "SELF EMPLOYED",
+    "firststeps" => "First steps",
+    "firststepstext" => "<li>first time getting in touch with web development and its technologies</li>
+                        <li>learning as much as possible to build my first website using famous czech PHP framework - Nette</li>
+                        <li>created 3 custom made websites from scratch</li>",
+    "artexeheader" => "Web developer, Software engineer and Team master",
+    "artexetext" => "<li>my first real job as a web developer</li>
+                            <li>building professionally prepared and custom made websites with specific functionality to serve clients needs</li>
+                            <li>developing self-made information systems with dozens of modules for different business types and customers</li>
+                            <li>team master for junior developers</li>
+                            <li>being a part of company business planning</li>",
+    "bitpandaheader" => "Software engineer",
+    "bitpandatext" => "<li>working on an API part of the biggest cryptocurrency trading platform in Europe with more than 850 000 customers</li>
+                            <li>integrating API with different payment providers, identity providers, mail providers, sms & voice call providers and other 3rd party libraries</li>
+                            <li>integrating features and combining internal services with a great emphasis on security, reliability, fastness and speed</li>
+                            <li>getting in touch with a different programming aproaches, continuous integration, code writing styles and technologies</li>
+                            <li>working with one of the best programmers in the Europe :)</li>",
+
+    "now" => "NOW",
+
+
+    "technicalskills" => "TECHNICAL SKILLS",
+    "programminglanguages" => "Programming languages",
+    "databases" => "Databases",
+    "softwaretools" => "Software tools",
+    "libandtools" => "Libraries and tools",
+    "hobbylanguages" => "Hobby languages",
+    "operationsystem" => "Operation system",
+
+
+
+
+
     "projectsitouched" => "PROJECTS",
     "myfirstwebsite1" => "My first website",
     "myfirstwebsite2" => "My first website built back in 2012 using HTML, CSS and just a pure PHP",
@@ -98,7 +133,7 @@ return [
     "customis2" => "Custom-made information systems
                         <ul>
                             <li>every website was connected with CMS system to control content of website</li>
-                            <li>each client had custom requirements for functionality of Informaton System and therefore adaptation to client needs was our every day battle</li>
+                            <li>each client had custom requirements for functionality of Information System and therefore adaptation to client needs was our every day goal</li>
                             <li>base of information system consisted of dozens of modules for controling content, user management, invoice module, CRM module and many more</li>
                             <li>one of the most creative solutions were information sytem for high quality clothes company Marco Mirelli or creating from scratch information system for go carts</li>
                         </ul>",
@@ -107,15 +142,15 @@ return [
 
 
     "customapi1" => "Custom API",
-    "customapi2" => "<li>working on backend API for frontend written in angular</li>
-                            <li>working on internal services</li>
+    "customapi2" => "<li>working on API for frontend written in angular</li>
+                            <li>working on internal services in closed clusters</li>
                             <li>working on service that is responsible for every email, sms and voice call going to customers</li>",
 
 
     "customprojects1" => "Custom projects and interests",
     "customprojects2" => "My custom projects and interest i keep working on in my free time
                         <ul>
-                            <li>i am working on a custom betting bot called hazarder hazarder.vladino.me</li>
+                            <li>i am working on a custom betting bot called hazarder Hazarder</li>
                             <li>i am running a custom VPS to try and learn simple DevOps techniques and tools using docker</li>
                         </ul>",
 
@@ -132,7 +167,7 @@ return [
                     <td>Level</td>
                     <td>Native</td>
                     <td>C1</td>
-                    <td>A1.2</td>
+                    <td>A1</td>
                     <td>A1</td>
                 </tr>",
 

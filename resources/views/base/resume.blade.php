@@ -56,22 +56,20 @@
         <section class="inner">
             <div class="special-line">
                 <div class="line"></div>
-                <h2>WORK HISTORY</h2>
+                <h2>@lang("base.workhistory")</h2>
             </div>
             <table class="table table-bordered table-resume">
                 <tr>
-                    <td colspan="2">SELF EMPLOYED</td>
+                    <td colspan="2">@lang("base.selfemployed")</td>
                     <td class="years-column years-column-right"><span class="fas fa-calendar-alt"></span> 2012 - 2013</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><strong>First steps</strong></td>
+                    <td colspan="3"><strong>@lang("base.firststeps")</strong></td>
                 </tr>
                 <tr>
                     <td colspan="3">
                         <ul>
-                            <li>first time getting in touch with web development and its technologies</li>
-                            <li>learning as much as possible to build my first website using famous czech PHP framework - nette</li>
-                            <li>created 3 custom made websites from scratch</li>
+                            @lang("base.firststepstext")
                         </ul>
                     </td>
                 </tr>
@@ -85,16 +83,12 @@
                     <td class="years-column years-column-right"><span class="fas fa-calendar-alt"></span> 2013 - 2018</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><strong>Web developer, Software engineer, Product owner and Team master</strong></td>
+                    <td colspan="3"><strong>@lang("base.artexeheader")</strong></td>
                 </tr>
                 <tr>
                     <td colspan="3">
                         <ul>
-                            <li>my first real job as a web developer</li>
-                            <li>building professionaly prepared and custom made websites with specific functionality to serve clients needs</li>
-                            <li>developing self-made information systems with dozens of modules for different business types and customers</li>
-                            <li>team master for junior developers</li>
-                            <li>being a part of company business planning and becoming a shareholder</li>
+                            @lang("base.artexetext")
                         </ul>
                     </td>
                 </tr>
@@ -105,20 +99,16 @@
             <table class="table table-bordered table-resume">
                 <tr>
                     <td colspan="2">BITPANDA</td>
-                    <td class="years-column years-column-right"><span class="fas fa-calendar-alt"></span> 2018 - NOW</td>
+                    <td class="years-column years-column-right"><span class="fas fa-calendar-alt"></span> 2018 - @lang("base.now")</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><strong>Software engineer</strong></td>
+                    <td colspan="3"><strong>@lang("base.bitpandaheader")</strong></td>
                 </tr>
                 <tr>
                 <tr>
                     <td colspan="3">
                         <ul>
-                            <li>working on an API part of the biggest cryptocurrency trading platform in Europe with more than 850 000 customers</li>
-                            <li>integrating API with different payment providers, identity providers, mail providers, sms & voice call providers and other 3rd party libraries</li>
-                            <li>integrating features and combining internal services with a great emphasis on security, reliability, fastness and speed</li>
-                            <li>getting in touch with a different programming aproaches, continuous integration, code writing styles and technologies</li>
-                            <li>working with one of the best programmers in the Europe :)</li>
+                            @lang("base.bitpandatext")
                         </ul>
                     </td>
                 </tr>
@@ -130,11 +120,11 @@
         <section class="inner">
             <div class="special-line">
                 <div class="line"></div>
-                <h2>TECHNICAL SKILLS</h2>
+                <h2>@lang("base.technicalskills")</h2>
             </div>
             <table class="table table-bordered">
                 <tr>
-                    <td style="white-space: nowrap;"><strong>Programming languages</strong></td>
+                    <td style="white-space: nowrap;"><strong>@lang("base.programminglanguages")</strong></td>
                     <td>HTML, CSS, JavaScript, PHP, SQL</td>
                 </tr>
                 <tr>
@@ -142,24 +132,24 @@
                     <td>Laravel, Lumen, Nette</td>
                 </tr>
                 <tr>
-                    <td><strong>Databases</strong></td>
+                    <td><strong>@lang("base.databases")</strong></td>
                     <td>MySQL, Redis</td>
                 </tr>
                 <tr>
-                    <td><strong>Software tools</strong></td>
+                    <td><strong>@lang("base.softwaretools")</strong></td>
                     <td>PHPStorm, Datagrip, Postman, GitLab, GitHub</td>
                 </tr>
                 <tr>
-                    <td><strong>Libraries and tools</strong></td>
+                    <td><strong>@lang("base.libandtools")</strong></td>
                     <td>Doctrine 2 ORM, CakePHP ORM, Eloquent ORM, WebGL, Sentry, Graylog, Twilio, Nexmo, Amazon SQS, Latte, Blade, Bootstrap, jQuery,
                         Docker, GIT, Guzzle, cURL, SSH, OpenVPN, PHPUnit, Webhook, Composer,  Certbot, Bash, Google analytics, Heatmaps</td>
                 </tr>
                 <tr>
-                    <td><strong>Hobby languages</strong></td>
+                    <td><strong>@lang("base.hobbylanguages")</strong></td>
                     <td>Java (OpenGL)</td>
                 </tr>
                 <tr>
-                    <td><strong>Operation system</strong></td>
+                    <td><strong>@lang("base.operationsystem")</strong></td>
                     <td>Ubuntu</td>
                 </tr>
             </table>
