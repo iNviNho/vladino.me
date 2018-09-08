@@ -124,7 +124,7 @@ return [
     "customwebsites2" => "Stránky na mieru pomocou zaužívaného pracovného postupu:
                         <ul>
                             <li>získanie požiadavkov a informácií od klienta</li>
-                            <li>vytvoriť drôtený model (wireframe)</li>
+                            <li>tvorba drôteného model (wireframe)</li>
                             <li>tvorba dizajnu pre každú podstránku</li>
                             <li>programovanie webovej stránky</li>
                             <li>aplikácia SEO</li>
@@ -197,7 +197,7 @@ return [
     "contactthankyou" => "Ďakujem! Mám to.",
 
 
-    "somesexyquote" => "je v skutku pozoruhodné, že všetkú tú našu tvrdú prácu ľudia nazvú talent, alebo šťaste",
+    "somesexyquote" => "je v skutku pozoruhodné, že všetkú tú tvrdú prácu k úspechu budú ľudia nazvývať talent, alebo šťastie",
     "norightsreserved" => "@2018 Žiadne práva nie sú vyhradené. Môžte použíť a zdieľať čokoľvek si želáte.",
 
 ];
