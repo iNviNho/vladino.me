@@ -8,6 +8,9 @@
     <title>vladino.me | @lang("base.titlemoto") </title>
     <meta name="description" content="@lang("base.description")">
     <meta property="og:image" content="{{ assetn("images/me-and-programming.JPG") }}" />
+    <meta property="og:url" content="https://vladino.me" />
+    <meta property="og:title" content="@lang("base.titlemoto")" />
+    <meta property="og:description" content="@lang("base.description")" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
