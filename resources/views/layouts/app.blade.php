@@ -74,7 +74,7 @@
                     </li>
                 @endforeach
                 <li >
-                    <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="Coming soon!">DE</a>
+                    <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
                 </li>
             </ul>
         </div>
@@ -101,7 +101,7 @@
                         </li>
                     @endforeach
                     <li >
-                        <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="Coming soon!">DE</a>
+                        <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
                     </li>
                 </ul>
                 <ul>

@@ -7,6 +7,8 @@ return [
     "contact" => "KONTAKT",
     "contactsmall" => "Kontakt",
 
+    "comingsoon" => "Už čoskoro",
+
     "titlemoto" => "zanietený mladý vývojár",
     "description" => "Zanietený mladý PHP vývojár pracujúci s najlepšími technológiami aby si splnil svoje sny.",
 
