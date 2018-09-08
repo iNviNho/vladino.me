@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{App::getLocale()}}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +7,29 @@
 
     <title>vladino.me | @lang("base.titlemoto") </title>
     <meta name="description" content="@lang("base.description")">
+    <meta property="og:image" content="{{ assetn("images/me-and-programming.JPG") }}" />
+    <meta property="og:url" content="https://vladino.me" />
+    <meta property="og:title" content="@lang("base.titlemoto")" />
+    <meta property="og:description" content="@lang("base.description")" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Scripts -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{{ assetn('js/app.js') }}?{{rand(1,250)}}" ></script>
+    <script src="{{ assetn('js/app.js')}}?{{$version}}" ></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="{{ assetn('css/app.css') }}?{{rand(1,250)}}" rel="stylesheet">
-    <link href="{{ assetn('css/respo.css') }}?{{rand(1,250)}}" rel="stylesheet">
+    <link href="{{ assetn('css/app.css') }}?{{$version}}" rel="stylesheet">
+    <link href="{{ assetn('css/respo.css') }}?{{$version}}" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="{{ assetn("images/logo.png") }}">
 
@@ -52,30 +55,30 @@
             <a href="/{{App::getLocale()}}"><h1>vladino.me <span class="fas fa-laptop-code"></span></h1></a>
             <ul>
                 <li>
-                    <a href="/{{App::getLocale()}}" class="active">@lang("base.home")</a>
+                    <a href="{{route("home", ["locale" => App::getLocale()])}}"
+                       @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale() . "/resume"}}">@lang("base.resume")</a>
+                    <a href="{{route("resume", ["locale" => App::getLocale()])}}"
+                       @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale() . "/contact"}}">@lang("base.contact")</a>
+                    <a href="{{route("contact", ["locale" => App::getLocale()])}}"
+                       @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
                 </li>
             </ul>
             <ul class="lang-ul">
+                {{--LOCALES HANDLING--}}
+                @foreach ($locales as $key => $value)
+                    <li >
+                        <a @if ($key == App::getLocale())
+                           class="active"
+                           @endif
+                           href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
+                    </li>
+                @endforeach
                 <li >
-                    <a @if (App::getLocale() == "sk")
-                       class="active"
-                       @endif href="/sk">SK</a>
-                </li>
-                <li class="">
-                    <a @if (App::getLocale() == "en")
-                       class="active"
-                       @endif  href="/en">EN</a>
-                </li>
-                <li class="">
-                    <a @if (App::getLocale() == "de")
-                       class="active"
-                       @endif href="/de">DE</a>
+                    <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
                 </li>
             </ul>
         </div>
@@ -92,33 +95,31 @@
             </section>
             <nav class="navigation navigation-desktop">
                 <ul class="lang-ul">
+                    {{--LOCALES HANDLING--}}
+                    @foreach ($locales as $key => $value)
+                        <li >
+                            <a @if ($key == App::getLocale())
+                               class="active"
+                               @endif
+                               href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
+                        </li>
+                    @endforeach
                     <li >
-                        <a @if (App::getLocale() == "sk")
-                           class="active"
-                           @endif href="/sk/{{Request::route()->getName()}}">SK</a>
-                    </li>
-                    <li class="">
-                        <a @if (App::getLocale() == "en")
-                           class="active"
-                           @endif  href="/en/{{Request::route()->getName()}}">EN</a>
-                    </li>
-                    <li class="">
-                        <a @if (App::getLocale() == "de")
-                           class="active"
-                           @endif href="/de/{{Request::route()->getName()}}">DE</a>
+                        <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="@lang("base.comingsoon")!">DE</a>
                     </li>
                 </ul>
                 <ul>
+                    {{--MENU HANDLING--}}
                     <li>
-                        <a href="/{{App::getLocale() }}"
+                        <a href="{{route("home", ["locale" => App::getLocale()])}}"
                            @if (Request::route()->getName() == "home") class="active" @endif>@lang("base.home")</a>
                     </li>
                     <li>
-                        <a href="/{{App::getLocale() . "/resume"}}"
+                        <a href="{{route("resume", ["locale" => App::getLocale()])}}"
                            @if (Request::route()->getName() == "resume") class="active" @endif>@lang("base.resume")</a>
                     </li>
                     <li>
-                        <a href="/{{App::getLocale() . "/contact"}}"
+                        <a href="{{route("contact", ["locale" => App::getLocale()])}}"
                            @if (Request::route()->getName() == "contact") class="active" @endif>@lang("base.contact")</a>
                     </li>
                 </ul>
@@ -152,13 +153,13 @@
             <h1>“@lang("base.somesexyquote")“</h1>
             <ul class="menu-review">
                 <li>
-                    <a href="/{{App::getLocale()}}">@lang("base.home")</a>
+                    <a href="{{route("home", ["locale" => App::getLocale()])}}">@lang("base.home")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale()}}/resume">@lang("base.resume")</a>
+                    <a href="{{route("resume", ["locale" => App::getLocale()])}}">@lang("base.resume")</a>
                 </li>
                 <li>
-                    <a href="/{{App::getLocale()}}/contact">@lang("base.contact")</a>
+                    <a href="{{route("contact", ["locale" => App::getLocale()])}}">@lang("base.contact")</a>
                 </li>
             </ul>
             <p>@lang("base.norightsreserved")</p>

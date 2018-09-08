@@ -4,19 +4,6 @@
         url("/fonts/gothamlight.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: GothamBold;
-    src: url("/fonts/gothamlight.svg") format("svg"),
-        url("/fonts/gothambold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: 'Fjalla One';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v5/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
 html, body {
     margin: 0px;
@@ -29,7 +16,8 @@ html, body {
 }
 
 h1 {
-    font-family: GothamBold;
+    font-family: GothamLight!important;
+    font-weight: 700;
 }
 
 
@@ -285,6 +273,11 @@ nav.navigation ul li a.active {
     font-weight: bold;
 }
 
+nav.navigation li a.inactive {
+    cursor: default;
+    opacity: 0.2;
+}
+
 nav.navigation .lang-ul {
     padding-left: 100px;
 }
@@ -364,6 +357,16 @@ nav.navigation .lang-ul li a {
     padding: 0px 10px;
 }
 
+.navigation-mobile-content-inner ul.lang-ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navigation-mobile-content-inner ul.lang-ul li a.inactive {
+    opacity: 0.2;
+    cursor: default;
+}
+
 .navigation-mobile-footer {
     position: absolute;
     bottom: 0px;
@@ -380,6 +383,11 @@ nav.navigation .lang-ul li a {
 .navigation-mobile-content-inner ul li a {
     font-size: 40px;
     color: black;
+}
+
+.navigation-mobile-content-inner ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .main-section .main-quote {
@@ -531,7 +539,7 @@ nav.navigation .lang-ul li a {
 
 .years-column {
     text-align: left;
-    width: 150px;
+    width: 170px;
 }
 
 .years-column-right {
