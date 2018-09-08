@@ -273,6 +273,11 @@ nav.navigation ul li a.active {
     font-weight: bold;
 }
 
+nav.navigation li a.inactive {
+    cursor: default;
+    opacity: 0.2;
+}
+
 nav.navigation .lang-ul {
     padding-left: 100px;
 }
@@ -355,6 +360,11 @@ nav.navigation .lang-ul li a {
 .navigation-mobile-content-inner ul.lang-ul li a.active {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.navigation-mobile-content-inner ul.lang-ul li a.inactive {
+    opacity: 0.2;
+    cursor: default;
 }
 
 .navigation-mobile-footer {

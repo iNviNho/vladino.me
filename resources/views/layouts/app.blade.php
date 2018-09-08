@@ -73,6 +73,9 @@
                            href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
                     </li>
                 @endforeach
+                <li >
+                    <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="Coming soon!">DE</a>
+                </li>
             </ul>
         </div>
         <h1 class="navigation-mobile-footer">“@lang("base.somesexyquote")“</h1>
@@ -97,6 +100,9 @@
                                href="{{route(Request::route()->getName(), ["locale" => $key])}}">{{$value}}</a>
                         </li>
                     @endforeach
+                    <li >
+                        <a class="inactive" href="#" data-toggle="tooltip" data-placement="left" title="Coming soon!">DE</a>
+                    </li>
                 </ul>
                 <ul>
                     {{--MENU HANDLING--}}
