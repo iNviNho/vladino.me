@@ -68,7 +68,7 @@ return [
     "education" => "EDUCATION",
     "educationschool" => "<strong>System Engineering and Informatics</strong><br>
                         Brno University of Technology (VUT)<br>
-                        Faculty: Faculty of Economics.<br>
+                        Faculty: Faculty of Economics<br>
                         Marks Average: 1.45<br>
                         Master Thesis: Design of an Information System Part. Mark: B",
     "educationnettecertificate" => "Certification of mastering Nette framework",
@@ -76,7 +76,7 @@ return [
 
     "examples" => "Examples",
 
-    "projectsitouched" => "PROJECTS I TOUCHED",
+    "projectsitouched" => "PROJECTS",
     "myfirstwebsite1" => "My first website",
     "myfirstwebsite2" => "My first website built back in 2012 using HTML, CSS and just a pure PHP",
 
@@ -87,7 +87,7 @@ return [
                             <li>creating wireframe</li>
                             <li>creating design for every subpage</li>
                             <li>proceeding to development stage of a website</li>
-                            <li>applying serach optimization techniques</li>
+                            <li>applying search engine optimization techniques</li>
                             <li>testing</li>
                         </ul>",
     "honorablemention" => "Honorable mention",

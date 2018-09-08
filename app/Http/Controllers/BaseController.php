@@ -14,9 +14,20 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\View;
 
 class BaseController extends Controller
 {
+
+    public function __construct()
+    {
+        View::share("version", "1");
+        View::share("locales", [
+            "sk" => "SK",
+            "en" => "EN",
+            "de" => "DE"
+        ]);
+    }
 
     public function home() {
 
