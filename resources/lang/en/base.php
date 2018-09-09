@@ -140,8 +140,13 @@ return [
                             <li>base of information system consisted of dozens of modules for controlling content, user management, invoice module, CRM module and many more</li>
                             <li>one of the most creative solutions were information sytem for high quality clothes company Marco Mirelli or creating from scratch information system for go carts</li>
                         </ul>",
-    "customis3" => "Marco Mirelli (High quality clothes) IS, Velox (Accountant) IS, 28blackarena (go-cart) IS, Informovanieapublicita (parsing state contracts) IS, Artexe CMS system, Artexe CRM system,
-                        Artexe ARTINO - e-learning system for high school education",
+    "customis3" => "<li>Marco Mirelli (High quality clothes) IS</li>
+                    <li>Velox (Accountant) IS</li>
+                    <li>28blackarena (go-cart) IS</li>
+                    <li>Informovanie a publicita (parsing state contracts) IS</li>
+                    <li>Artexe CMS system</li>
+                    <li>Artexe CRM system</li>
+                    <li>Artexe ARTINO - e-learning system for high school education</li>",
 
 
     "customapi1" => "Custom API",

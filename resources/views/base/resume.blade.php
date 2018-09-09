@@ -359,7 +359,9 @@
                 <tr>
                     <td>@lang("base.examples")</td>
                     <td>
+                        <ul>
                         @lang("base.customis3")
+                        </ul>
                     </td>
                 </tr>
             </table>
@@ -369,7 +371,11 @@
                     <li class="bold">@lang("base.customis1")</li>
                     <li>@lang("base.customis2")</li>
                     <li class="bold">@lang("base.examples")</li>
-                    <li>@lang("base.customis3")</li>
+                    <li>
+                        <ul>
+                            @lang("base.customis3")
+                        </ul>
+                    </li>
                 </ul>
             </div>
 

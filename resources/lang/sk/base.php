@@ -144,9 +144,12 @@ return [
                             <li>jednou zo zložitejších prác bol informačný systém pre firmu Marco Mirelli, ktorá ponúka špičkovo kvalitné oblečenie na mieru, 
                             alebo veľmi kreatívna tvorba systému pre motokáry úplne od základov</li>
                         </ul>",
-    "customis3" => "Marco Mirelli (Vysoko kvalitné obleky) IS, Velox (Účtovníctvo) IS, 28blackarena (motokáry) IS, 
-        Informovanieapublicita (automatické parsovanie štátnych zákazok) IS, Artexe CMS systém, Artexe CRM systém,
-        Artexe ARTINO - e-learning systém pre stredoškolské vzdelávanie",
+    "customis3" => "<li>Marco Mirelli (Vysoko kvalitné obleky) IS</li>
+                    <li>Velox (Účtovníctvo) IS, 28blackarena (motokáry) IS</li>
+                    <li>Informovanie a publicita (automatické parsovanie štátnych zákazok) IS</li>
+                    <li>Artexe CMS systém</li>
+                    <li>Artexe CRM systém</li>
+                    <li>Artexe ARTINO - e-learning systém pre stredoškolské vzdelávanie</li>",
 
 
     "customapi1" => "API na mieru",
