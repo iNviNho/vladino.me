@@ -155,7 +155,7 @@ return [
 
 
     "customprojects1" => "Vlastné projekty a záujmy",
-    "customprojects2" => "Moje vlastné projekty a hobby jazyky, na ktorých pracujem vo svojom volnom čase
+    "customprojects2" => "Moje vlastné projekty a hobby jazyky, na ktorých pracujem vo svojom voľnom čase
                         <ul>
                             <li>pracujem na vlastnom stávkovacom botovi nazvanom Hazarder</li>
                             <li>obsluhujem vlastný VPS, aby som sa bližšie zoznámil s prácou DevOps a službou docker</li>
@@ -198,6 +198,6 @@ return [
 
 
     "somesexyquote" => "je v skutku pozoruhodné, že všetkú tú tvrdú prácu k úspechu budú ľudia nazývať talent, alebo šťastie",
-    "norightsreserved" => "@2018 Žiadne práva nie sú vyhradené. Môžte použíť a zdieľať čokoľvek si želáte.",
+    "norightsreserved" => "@2018 Žiadne práva nie sú vyhradené. Môžete použíť a zdieľať čokoľvek si želáte.",
 
 ];
