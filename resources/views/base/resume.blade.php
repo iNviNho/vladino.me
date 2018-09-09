@@ -133,7 +133,7 @@
             <table class="table table-bordered table-mobile-hidden">
                 <tr>
                     <td style="white-space: nowrap;"><strong>@lang("base.programminglanguages")</strong></td>
-                    <td>HTML, CSS, JavaScript, PHP, SQL</td>
+                    <td>HTML, CSS, JavaScript, PHP, SQL, Visual Basic @lang("base.basics"), Java @lang("base.basics")</td>
                 </tr>
                 <tr>
                     <td><strong>PHP Frameworks</strong></td>
@@ -164,7 +164,7 @@
             <div class="table-mobile-show">
                 <ul class="ul-tablelized">
                     <li class="bold">@lang("base.programminglanguages")</li>
-                    <li>HTML, CSS, JavaScript, PHP, SQL</li>
+                    <li>HTML, CSS, JavaScript, PHP, SQL, Visual Basic @lang("base.basics"), Java @lang("base.basics")</li>
                     <li class="bold">PHP Frameworks</li>
                     <li>Laravel, Lumen, Nette, CakePHP @lang("base.basics"), Symfony @lang("base.basics")</li>
                     <li class="bold">@lang("base.databases")</li>
