@@ -35,13 +35,18 @@ h2 {
     font-weight: bold;
 }
 
-
+.bold {
+    font-weight: bold;
+}
 
 .mobile-overflow {
     overflow: hidden;
 }
 
-
+.nowrap {
+    white-space: nowrap;
+    width: 1px;
+}
 
 
 
@@ -463,6 +468,33 @@ nav.navigation .lang-ul li a {
     cursor: pointer;
     background-position: 60% 60%;
 }
+
+.table-mobile-show {
+    display: none;
+}
+
+
+
+.ul-tablelized {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.ul-tablelized > li {
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    padding: .75rem;
+}
+
+.ul-tablelized > li:last-child {
+    border: 1px solid #dee2e6;
+}
+
+
+
+
+
 
 section.footer {
     background-color: #26262a;

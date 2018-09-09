@@ -20,7 +20,7 @@ class BaseController extends Controller
 
     public function __construct()
     {
-        View::share("version", "3");
+        View::share("version", "4");
         View::share("locales", [
             "sk" => "SK",
             "en" => "EN"

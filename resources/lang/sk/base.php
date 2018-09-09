@@ -113,6 +113,7 @@ return [
     "hobbylanguages" => "Hobby jazyky",
     "operationsystem" => "Operačný systém",
 
+    "basics" => "základy",
 
 
 
@@ -164,20 +165,12 @@ return [
 
 
     "languages" => "JAZYKY",
-    "languageslist" => "<tr>
-                    <td><strong>Jazyky</strong></td>
-                    <td><strong>Slovenský</strong></td>
-                    <td><strong>Anglický</strong></td>
-                    <td><strong>Nemecký</strong></td>
-                    <td><strong>Ruský</strong></td>
-                </tr>
-                <tr>
-                    <td>Level</td>
-                    <td>Rodný jazyk</td>
-                    <td>C1</td>
-                    <td>A1</td>
-                    <td>A1</td>
-                </tr>",
+    "languagesnormal" => "Jazyky",
+    "slovak" => "Slovenský",
+    "english" => "Anglický",
+    "german" => "Nemecký",
+    "russian" => "Ruský",
+    "native" => "Rodný jazyk",
 
     "interesthobbies" => "ZÁUJMY & HOBBY",
     "interesthobbiesli" => "<li>čítanie kníh</li>

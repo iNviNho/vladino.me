@@ -109,6 +109,7 @@ return [
     "hobbylanguages" => "Hobby languages",
     "operationsystem" => "Operation system",
 
+    "basics" => "basics",
 
 
 
@@ -159,20 +160,12 @@ return [
 
 
     "languages" => "LANGUAGES",
-    "languageslist" => "<tr>
-                    <td><strong>Languages</strong></td>
-                    <td><strong>Slovak</strong></td>
-                    <td><strong>English</strong></td>
-                    <td><strong>German</strong></td>
-                    <td><strong>Russian</strong></td>
-                </tr>
-                <tr>
-                    <td>Level</td>
-                    <td>Native</td>
-                    <td>C1</td>
-                    <td>A1</td>
-                    <td>A1</td>
-                </tr>",
+    "languagesnormal" => "Languages",
+    "slovak" => "Slovak",
+    "english" => "English",
+    "german" => "German",
+    "russian" => "Russian",
+    "native" => "Native",
 
     "interesthobbies" => "INTEREST & HOBBIES",
     "interesthobbiesli" => "<li>reading books</li>
