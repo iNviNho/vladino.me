@@ -58,7 +58,7 @@ class BaseController extends Controller
             $message->subject('Contact form submit on vladino.me');
         });
 
-        return redirect("/" . App::getLocale() . "/contact/thankyou");
+        return redirect(route("contactthankyou", ["locale" => App::getLocale()]));
     }
 
 }
