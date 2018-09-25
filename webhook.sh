@@ -1,2 +1,2 @@
 #!/bin/sh
-cd /var/www/vladinome/ && git pull
+cd /var/www/vladinome/ && ./deploy-production.sh
