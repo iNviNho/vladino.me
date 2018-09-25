@@ -22,9 +22,9 @@ return [
     "whoami" => "Kto som?",
     "whoamitext" => "Som <strong>:years rokov</strong>, <strong>:months mesiace</strong> a <strong>:days dní</strong> starý chlapec pochádzajúci z 
                 máleho mesta zvaného <strong>Martin</strong> z <strong>krásnej krajiny Slovensko</strong>. 
-                Narodil som sa v perfektnej rodine obkolesený úžasnými ľudmi, ktorý ma naučili byť <strong>slušný</strong>, nestrácať <strong>priateľskosť</strong>, 
+                Narodil som sa v perfektnej rodine obkolesený úžasnými ľudmi, ktorí ma naučili byť <strong>slušný</strong>, nestrácať <strong>priateľskosť</strong>, 
                 <strong>tvrdo na sebe pracovať</strong> a
-                <strong>kombinovať srdce s rozumom</strong> keď je čas sa rozhodnúť.<br><br>
+                <strong>kombinovať srdce s rozumom</strong>, keď je čas sa rozhodnúť.<br><br>
 
                 Počas môjho života som sa stretol s množstvom zaujímavých vecí, ktoré ma sformovali do aktuálnej osobnosti s cieľom a cestou,
                 ktorú <strong>následujem každý jedeň deň.</strong><br><br>
@@ -82,10 +82,10 @@ return [
     "workhistory" => "PRACOVNÁ HISTÓRIA",
     "selfemployed" => "Začiatok",
     "firststeps" => "Prvé kroky",
-    "firststepstext" => "<li>po prvý krát v kontakte s technológia okolo vývoja webových stránok</li>
-                        <li>učenie, učenie a skúšanie, aby som po prvý krát postavil webovú stránku na populárnom českom PHP frameworku - Nette</li>
+    "firststepstext" => "<li>po prvý krát v kontakte s technológiami okolo vývoja webových stránok</li>
+                        <li>aplikovanie techniky učenie & skúšanie, aby som po prvý krát postavil webovú stránku na populárnom českom PHP frameworku - Nette</li>
                         <li>tvorba 3 na mieru vytvorených stránok bez akéhokoľvek CMS systému</li>",
-    "artexeheader" => "Web vývojár, softvérový inžinier a team master",
+    "artexeheader" => "Webový vývojár, softvérový inžinier a team master",
     "artexetext" => "<li>moja prvá skutočná práca v pozícií webového vývojára</li>
                             <li>tvorba profesionálne pripravených webových stránok so špecifickými požiadavkami pre uspokojenie klienta</li>
                             <li>tvorba vlastného informačného systému s tuctom modulov pre rôzne biznis moduly a pre rôznych zákazníkov</li>
@@ -95,8 +95,8 @@ return [
     "bitpandatext" => "<li>práca na API pre najväčšiu kryptomenovú platformu v Európe s viac než 850 000 zákazníkmi</li>
                             <li>integrácia API pre rôzne platobné brány, identifikačných poskytovateľov, mail poskytovateľov, sms & hlasové služby a iné treťostranové knižnice</li>
                             <li>integrácia noviniek a spájanie interných služieb s maximálnym dôrazom na bezpečnosť, funkčnosť, rýchlosť a bezproblémovosť</li>
-                            <li>kontakt s najrôznejšími programatorskými technikami, štýlmi písania, devops technikami a technológiami pre udržanie stability obrovského systému</li>
-                            <li>práca s jednými z najlepších programátov v Euroópe :)</li>",
+                            <li>kontakt s najrôznejšími programatorskými technikami, štýlmi písania, devops technikami a technológiami pre udržanie stability obrovského komplexného systému</li>
+                            <li>práca s jednými z najlepších programátov v Európe :)</li>",
 
 
     "now" => "TERAZ",
@@ -113,6 +113,7 @@ return [
     "hobbylanguages" => "Hobby jazyky",
     "operationsystem" => "Operačný systém",
 
+    "basics" => "základy",
 
 
 
@@ -124,7 +125,7 @@ return [
     "customwebsites2" => "Stránky na mieru pomocou zaužívaného pracovného postupu:
                         <ul>
                             <li>získanie požiadavkov a informácií od klienta</li>
-                            <li>vytvoriť drôtený model (wireframe)</li>
+                            <li>tvorba drôteného model (wireframe)</li>
                             <li>tvorba dizajnu pre každú podstránku</li>
                             <li>programovanie webovej stránky</li>
                             <li>aplikácia SEO</li>
@@ -139,23 +140,26 @@ return [
                         <ul>
                             <li>každá webová stránka bola napojená na CMS systém pre pohodlnú správu obsahu</li>
                             <li>požiadavky klienta boli vždy rozličné, a preto adaptácia funkcionality Informačného systému bol náš každodenný cieľ</li>
-                            <li>kostra informačného systému pozostávala z tuctu modulov zameraných na správu obsahu, správu užívateľov, správu kotanktov, fakturačný modul, CRM modul a mnoho iných</li>
-                            <li>jedna z najkreatívnejších a najzložitejších prác bol informačný systém pre firmu Marco Mirelli, ktorá ponúka špičkovo kvalitné oblečenie na mieru, 
-                            alebo tvorba systému pre motokáry úplne od základov</li>
+                            <li>kostra informačného systému pozostávala z tuctu modulov zameraných na správu obsahu, správu užívateľov, správu kontaktov, fakturačný modul, CRM modul a mnoho iných</li>
+                            <li>jednou zo zložitejších prác bol informačný systém pre firmu Marco Mirelli, ktorá ponúka špičkovo kvalitné oblečenie na mieru, 
+                            alebo veľmi kreatívna tvorba systému pre motokáry úplne od základov</li>
                         </ul>",
-    "customis3" => "Marco Mirelli (Vysoko kvalitné obleky) IS, Velox (Účtovníctvo) IS, 28blackarena (motokáry) IS, 
-        Informovanieapublicita (automatické parsovanie štátnych zákazok) IS, Artexe CMS systém, Artexe CRM systém,
-        Artexe ARTINO - e-learning systém pre stredoškolské vzdelávanie",
+    "customis3" => "<li>Marco Mirelli (Vysoko kvalitné obleky) IS</li>
+                    <li>Velox (Účtovníctvo) IS, 28blackarena (motokáry) IS</li>
+                    <li>Informovanie a publicita (automatické parsovanie štátnych zákazok) IS</li>
+                    <li>Artexe CMS systém</li>
+                    <li>Artexe CRM systém</li>
+                    <li>Artexe ARTINO - e-learning systém pre stredoškolské vzdelávanie</li>",
 
 
     "customapi1" => "API na mieru",
     "customapi2" => "<li>práca na API pre frontend napísaný v Angulare</li>
                             <li>práca na interných API, komunikújúcich v uzavretých clusteroch</li>
-                            <li>práca na službe zodpovednej za každý e-mail, sms a hlasový hovor zákazníkovy, denne cez 10 000 požiadaviek</li>",
+                            <li>práca na službe zodpovednej za každý e-mail, sms a hlasový hovor zákazníkovy, denne táto služba spracuje viac než 10 000 požiadaviek</li>",
 
 
     "customprojects1" => "Vlastné projekty a záujmy",
-    "customprojects2" => "Moje vlastné projekty a hobby jazyky, na ktorých pracujem vo svojom volnom čase
+    "customprojects2" => "Moje vlastné projekty a hobby jazyky, na ktorých pracujem vo svojom voľnom čase
                         <ul>
                             <li>pracujem na vlastnom stávkovacom botovi nazvanom Hazarder</li>
                             <li>obsluhujem vlastný VPS, aby som sa bližšie zoznámil s prácou DevOps a službou docker</li>
@@ -164,20 +168,12 @@ return [
 
 
     "languages" => "JAZYKY",
-    "languageslist" => "<tr>
-                    <td><strong>Jazyky</strong></td>
-                    <td><strong>Slovenský</strong></td>
-                    <td><strong>Anglický</strong></td>
-                    <td><strong>Nemecký</strong></td>
-                    <td><strong>Ruský</strong></td>
-                </tr>
-                <tr>
-                    <td>Level</td>
-                    <td>Rodný jazyk</td>
-                    <td>C1</td>
-                    <td>A1</td>
-                    <td>A1</td>
-                </tr>",
+    "languagesnormal" => "Jazyky",
+    "slovak" => "Slovenský",
+    "english" => "Anglický",
+    "german" => "Nemecký",
+    "russian" => "Ruský",
+    "native" => "Rodný jazyk",
 
     "interesthobbies" => "ZÁUJMY & HOBBY",
     "interesthobbiesli" => "<li>čítanie kníh</li>
@@ -191,13 +187,13 @@ return [
 
     "contacttext" => "Ak máte otázky, alebo mi len chcete niečo napísať, neváhajte, do toho :)",
     "contactname" => "VAŠE MENO",
-    "contactmail" => "VÁŠ E-MAL",
+    "contactmail" => "VÁŠ E-MAIL",
     "contactsubject" => "PREDMET",
     "contactsayhello" => "POZDRAVIŤ",
     "contactthankyou" => "Ďakujem! Mám to.",
 
 
-    "somesexyquote" => "je v skutku pozoruhodné, že všetkú tú našu tvrdú prácu ľudia nazvú talent, alebo šťaste",
-    "norightsreserved" => "@2018 Žiadne práva nie sú vyhradené. Môžte použíť a zdieľať čokoľvek si želáte.",
+    "somesexyquote" => "je v skutku pozoruhodné, že všetkú tú tvrdú prácu k úspechu budú ľudia nazývať talent, alebo šťastie",
+    "norightsreserved" => "@2018 Žiadne práva nie sú vyhradené. Môžete použíť a zdieľať čokoľvek si želáte.",
 
 ];

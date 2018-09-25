@@ -64,6 +64,17 @@
         font-size: 30px;
     }
 
+    .table-mobile-hidden {
+        display: none;
+    }
+
+    .table-mobile-show {
+        display: block;
+    }
+    table.table-mobile-show {
+        display: table;
+    }
+
 }
 
 

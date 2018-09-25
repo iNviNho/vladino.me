@@ -2,13 +2,13 @@ version: '3'
 
 services:
   hazarder-apache:
-    image: vladinome_production:latest
-    container_name: vladinome
+    image: vladino.me:5000/vladinome:production
+    container_name: vladinome_production
     networks:
       - nginxdb_proxy
     volumes:
       - .:/var/www/html
-      - /etc/letsencrypt/archive/vladino.me:/etc/ssl/private
+      - /etc/letsencrypt/archive/certs:/etc/ssl/private
     command: /var/www/html/init-production.sh
     restart: always
     ports:
