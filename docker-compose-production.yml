@@ -14,7 +14,7 @@ services:
     ports:
       - 443
     environment:
-      - VIRTUAL_HOST=vladino.me
+      - VIRTUAL_HOST=www.vladino.me,vladino.me
       - TZ=Europe/Vienna
 
 networks:
