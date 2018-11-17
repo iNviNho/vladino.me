@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Pushing images') {
             steps {
-                sh 'docker push registry.vladino.me:5000/vladino.me'
+                sh 'docker push registry.vladino.me:5000/vladinome'
             }
         }
         stage('Cleaning images') {
