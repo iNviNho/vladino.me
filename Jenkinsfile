@@ -5,7 +5,6 @@ pipeline {
         stage('Building images') {
             steps {
                 sh 'docker build -t registry.vladino.me:5000/vladinome:local -f docker/Dockerfile-local .'
-                sh 'docker-compose -v'
             }
         }
         stage('Testing images') {
@@ -20,7 +19,7 @@ pipeline {
         }
         stage('Cleaning images') {
             steps {
-                echo 'Deploying...'
+                echo 'Cleaning build image...'
             }
         }
     }
