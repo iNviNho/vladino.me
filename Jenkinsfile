@@ -5,6 +5,7 @@ pipeline {
         stage('Building images') {
             steps {
                 sh 'docker -v'
+                sh 'docker-compose -v'
             }
         }
         stage('Testing images') {
