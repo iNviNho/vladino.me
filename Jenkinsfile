@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Building images') {
             steps {
-                echo 'Building..'
+                sh 'docker -v'
             }
         }
         stage('Testing images') {
