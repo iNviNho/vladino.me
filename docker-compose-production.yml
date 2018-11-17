@@ -2,7 +2,7 @@ version: '3'
 
 services:
   hazarder-apache:
-    image: vladino.me:5000/vladinome:production
+    image: registry.vladino.me:5000/vladinome:production
     container_name: vladinome_production
     networks:
       - nginxdb_proxy
