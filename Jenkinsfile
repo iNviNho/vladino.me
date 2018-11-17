@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Cleaning images') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying ...'
             }
         }
     }
