@@ -8,11 +8,10 @@ services:
       - nginxdb_proxy
     volumes:
       - .:/var/www/html
-      - /etc/letsencrypt/archive/certs:/etc/ssl/private
     command: /var/www/html/init-production.sh
     restart: always
-    ports:
-      - 443
+    expose:
+      - 80
     environment:
       - VIRTUAL_HOST=www.vladino.me,vladino.me
       - TZ=Europe/Vienna
