@@ -1,0 +1,9 @@
+before_script:
+  - echo "ahoj"
+
+stages:
+  - prepare
+  - build
+  - test
+  - deploy
+  - clear

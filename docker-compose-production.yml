@@ -2,17 +2,16 @@ version: '3'
 
 services:
   hazarder-apache:
-    image: vladino.me:5000/vladinome:production
+    image: registry.vladino.me:5000/vladinome:production
     container_name: vladinome_production
     networks:
       - nginxdb_proxy
     volumes:
       - .:/var/www/html
-      - /etc/letsencrypt/archive/certs:/etc/ssl/private
     command: /var/www/html/init-production.sh
     restart: always
-    ports:
-      - 443
+    expose:
+      - 80
     environment:
       - VIRTUAL_HOST=www.vladino.me,vladino.me
       - TZ=Europe/Vienna
